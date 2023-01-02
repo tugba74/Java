@@ -1,0 +1,21 @@
+package ders19_arrays;
+
+import java.util.Arrays;
+
+public class C02_EnBuyukEnKucukElementiBulma {
+    public static void main(String[] args) {
+        // Verilen bir int array'de en kucuk ve en buyuk sayilari
+        // yazdiran bir method olusturun  //yazdırma olduğu için bize birşey döndürmeyecek o nedenle void
+
+        int[] arr={3,8,1,5,2,9};
+        enBuyukEnKucukElementyazdir(arr);
+    }
+
+    public static void enBuyukEnKucukElementyazdir(int[] arr){
+
+        Arrays.sort(arr); //küçükten büyüğe sıralar [1,2,3,5,8,9]
+        System.out.println("En buyuk element :" + arr[arr.length-1]);
+        System.out.println("En kucuk element :" + arr[0]);
+
+    }
+}
